@@ -1,0 +1,37 @@
+GET http://localhost:9000
+
+###
+
+GET http://localhost:9000/posts
+
+###
+
+POST http://localhost:9000/posts/add
+
+Content-Type: application/json
+
+{
+    "comments": [],
+    "caption": "random caption",
+    "user": "Prabhattomar12",
+    "imageURL": "https://firebasestorage.googleapis.com/v0/b/instagram-clone-1b858.appspot.com/o/images%2FScreenshot%20from%202021-05-20%2008-06-52.png?alt=media&token=b6353695-ae8b-4f69-baac-deb9eae52ecc"
+}
+
+###
+
+
+POST http://localhost:9000/posts/addComment?id=60dcad35493782888b2f6086
+
+Content-Type: application/json
+
+{
+    "text": "random comment",
+    "username": "Prabhattomar12",
+}
+
+
+###
+
+GET http://localhost:9000/posts/single?id=60dcad35493782888b2f6086
+
+###
