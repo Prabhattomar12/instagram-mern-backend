@@ -20,8 +20,7 @@ app.use(cors());
 
 // db config
 
-const connection_url =
-  'mongodb+srv://admin-prabhat:3pqmMsx2EAgjG4O5@cluster0.gfxdk.mongodb.net/instaDB?retryWrites=true&w=majority';
+const connection_url = 'Enter mongodb atlas connection url';
 mongoose.connect(connection_url, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
